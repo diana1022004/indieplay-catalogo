@@ -3,6 +3,7 @@ import Sidebar from "./componentes/Sidebar.jsx";
 import GameCard from "./componentes/GameCard.jsx";
 import "./App.css";
 
+const gamesImageBase = `${import.meta.env.BASE_URL}games/`;
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             studio="Scott Cawthon"
             genre="Terror"
             rating="4.7"
-            image="/games/fnaf.jpg"
+            image={`${gamesImageBase}fnaf.jpg`}
             description="Sobrevive cinco noches vigilando cámaras en una pizzería donde los animatrónicos cobran vida al caer la noche."
             action="Jugar"
           />
@@ -41,7 +42,7 @@ function App() {
             studio="Epic Games"
             genre="Battle Royale"
             rating="4.5"
-            image="/games/fortnite.jpg"
+            image={`${gamesImageBase}fortnite.jpg`}
             description="Cien jugadores, una isla que se reduce y la construcción como arma: el battle royale que marcó una generación."
             action="Jugar"
           />
@@ -50,7 +51,7 @@ function App() {
             studio="343 Industries"
             genre="Shooter / Ciencia ficción"
             rating="4.6"
-            image="/games/halo.jpg"
+            image={`${gamesImageBase}halo.jpg`}
             description="El Jefe Maestro regresa a enfrentar al Covenant en una campaña épica de ciencia ficción militar."
           />
           <GameCard
@@ -58,7 +59,7 @@ function App() {
             studio="Nintendo"
             genre="Plataformas"
             rating="4.9"
-            image="/games/mario.jpg"
+            image={`${gamesImageBase}mario.jpg`}
             description="Mario, Luigi y Peach corren, saltan y recolectan monedas por reinos llenos de enemigos clásicos."
             action="Jugar"
           />
@@ -67,7 +68,7 @@ function App() {
             studio="Mojang Studios"
             genre="Sandbox / Supervivencia"
             rating="4.8"
-            image="/games/minecraft.jpg"
+            image={`${gamesImageBase}minecraft.jpg`}
             description="Construye, explora y sobrevive en un mundo infinito hecho de bloques, totalmente a tu manera."
           />
           <GameCard
@@ -75,7 +76,7 @@ function App() {
             studio="Vaporcade Studio"
             genre="Carreras / Arcade"
             rating="4.4"
-            image="/games/neon-drifter.jpg"
+            image={`${gamesImageBase}neon-drifter.jpg`}
             description="Carreras callejeras de alto voltaje en una ciudad neón, con autos personalizables y nitro infinito."
             action="Jugar"
           />
@@ -84,7 +85,7 @@ function App() {
             studio="Games Workshop · Ed. en español: MasQueOca"
             genre="Juego de mesa"
             rating="4.5"
-            image="/games/talisman.jpg"
+            image={`${gamesImageBase}talisman.jpg`}
             description="4ª edición revisada del clásico juego de tablero de aventuras: explora, lucha y sé el primero en alcanzar la Corona del Poder."
           />
         </div>
