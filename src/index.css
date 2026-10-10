@@ -1,0 +1,32 @@
+:root {
+  --bg: #0b0d14;
+  --panel: #12151f;
+  --panel-2: #171b28;
+  --line: #242938;
+  --text: #eef0f7;
+  --muted: #8990a8;
+  --accent: #7c5cff;
+  --accent-2: #ff5c9d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Space Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Sora", system-ui, sans-serif;
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
